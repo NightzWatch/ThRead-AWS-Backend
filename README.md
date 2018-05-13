@@ -29,7 +29,7 @@ Please ask Jordan Rios for the keys in order to deploy code updates to AWS
 
 ### Deployments
 
-Run the following code after code merge. (PS. Will look into a GitHub integration to this automatically)
+Run the following code after code merge. (PS. Will look into a GitHub integration to do this automatically)
 
 ```
 apex deploy
