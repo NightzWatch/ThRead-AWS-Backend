@@ -1,0 +1,12 @@
+{
+    "description": "node function to use pusher chatkit server sdk",
+    "runtime": "nodejs",
+    "handler": "index.handler",
+    "memory": 128,
+    "timeout": 5,
+    "role": "arn:aws:iam::521972853523:role/thread-backend_lambda_function",
+    "environment": {
+        "instanceLocator": "v1:us1:ce5dc7d7-09b5-4259-a8ce-55d1bcf999ea",
+        "secretKey": "ff300296-3c94-43f6-b25c-591678c02e7a:t2sQQUMCsmtdm5K+RkQwrujwjoBNO61GvyhhreWGYGQ="
+    }
+}

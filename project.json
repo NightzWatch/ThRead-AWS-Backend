@@ -1,0 +1,8 @@
+{
+  "name": "thread-backend",
+  "description": "",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::521972853523:role/thread-backend_lambda_function",
+  "environment": {}
+}
