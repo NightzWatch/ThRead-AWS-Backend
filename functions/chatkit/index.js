@@ -51,10 +51,8 @@ exports.handler = (event, context, callback) => {
 		});
 	};
 
-	const getUserToken = user => {
-		const authData = chatkit.authenticate({
-			userId: user.id
-		});
+	const getUserToken = userId => {
+		const authData = chatkit.authenticate({ userId });
 
 		console.log('chat user authenticated successfully');
 		done(null, authData.body);
@@ -81,7 +79,7 @@ exports.handler = (event, context, callback) => {
 				break;
 			case 'auth':
 				console.log('authenticating chat user');
-				getUserToken(JSON.parse(event.body));
+				getUserToken(event.queryStringParameters.userId);
 				break;
 			default:
 				console.log('wrong api endpoint');
