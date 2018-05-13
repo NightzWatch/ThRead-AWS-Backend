@@ -79,9 +79,9 @@ exports.handler = (event, context, callback) => {
 				console.log('creating chat user');
 				createChatUser(JSON.parse(event.body));
 				break;
-			case 'authenticate-user':
+			case 'auth':
 				console.log('authenticating chat user');
-				createChatUser(JSON.parse(event.body));
+				getUserToken(JSON.parse(event.body));
 				break;
 			default:
 				console.log('wrong api endpoint');
